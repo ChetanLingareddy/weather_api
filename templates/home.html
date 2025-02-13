@@ -7,8 +7,11 @@
 <body>
   <h1>Weather Data API</h1>
 <p>url format: http://127.0.0.1:5000/api/v1/station/date</p>
-<p>url example: http://127.0.0.1:5000/api/v1/10/1988-03-25</p>
-  <!-- Using (|safe) we take data passed by stations.to_html() in main file and execute it as HTML data-->
+<p>For a particular station on a particular date: http://127.0.0.1:5000/api/v1/10/1988-03-25</p>
+<p>For a particular station in all dates: http://127.0.0.1:5000/api/v1/10</p>
+<p>For a particular station on a particular year: http://127.0.0.1:5000/api/v1/yearly/10/1988</p>
+
+  <!-- Convert and presenting data to HTML executable format, using |safe.-->
 <p>{{data|safe}}</p>
 </body>
 </html>
